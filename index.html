@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel SAS · Descanso, calma y hospitalidad</title>
+  <meta name="description" content="Hotel SAS: habitaciones cómodas, restaurante, piscina y atención cálida. Conoce los espacios de un hotel de demostración.">
+
+  <!-- Tipografías: Cormorant Garamond (títulos) + Jost (texto) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <!-- Iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ================= NAVEGACIÓN ================= -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#inicio" class="logo" aria-label="Hotel SAS - Inicio">
+        <i class="fa-solid fa-leaf"></i>
+        <span>Hotel <strong>SAS</strong></span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu" aria-label="Menú principal">
+        <a href="#inicio" class="nav-link active">Inicio</a>
+        <a href="#habitaciones" class="nav-link">Habitaciones</a>
+        <a href="#servicios" class="nav-link">Servicios</a>
+        <a href="#nosotros" class="nav-link">Nosotros</a>
+        <a href="#reservas" class="nav-link">Reservas</a>
+        <a href="#contacto" class="nav-link">Contacto</a>
+        <a href="login_cliente.php" class="btn btn-primary nav-cta">Clientes</a>
+        <a href="login_personal.php" class="btn btn-staff nav-cta">Personal</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <span class="eyebrow reveal">Bienvenido a Hotel SAS</span>
+        <h1 class="reveal">Un refugio de calma<br>para tu próxima escapada</h1>
+        <p class="reveal">Habitaciones luminosas, sabores locales y un servicio cercano. Aquí cada detalle está pensado para que descanses de verdad.</p>
+        <div class="hero-actions reveal">
+          <a href="#reservas" class="btn btn-primary btn-lg">Cotizar estadía</a>
+          <a href="#habitaciones" class="btn btn-ghost btn-lg">Ver habitaciones</a>
+        </div>
+      </div>
+      <a href="#presentacion" class="scroll-hint" aria-label="Bajar"><i class="fa-solid fa-angle-down"></i></a>
+    </section>
+
+    <!-- ================= CARRUSEL GENERAL ================= -->
+    <section class="section section-light" id="presentacion">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Conoce el hotel</span>
+          <h2>Rincones para desconectarte</h2>
+          <p>Un recorrido por nuestros espacios: piscina, restaurante, jardines y zonas de descanso.</p>
+        </div>
+
+        <div class="carousel" id="carouselGeneral" data-autoplay="5000">
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <figure class="slide"><img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=1200&q=80" alt="Fachada y piscina del hotel" loading="lazy"><figcaption>Piscina y terraza</figcaption></figure>
+              <figure class="slide"><img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1200&q=80" alt="Restaurante del hotel" loading="lazy"><figcaption>Restaurante</figcaption></figure>
+              <figure class="slide"><img src="https://images.unsplash.com/photo-1445019980597-93fa8acb246c?auto=format&fit=crop&w=1200&q=80" alt="Zona de piscina al atardecer" loading="lazy"><figcaption>Zona de relajación</figcaption></figure>
+              <figure class="slide"><img src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?auto=format&fit=crop&w=1200&q=80" alt="Vista exterior del hotel" loading="lazy"><figcaption>Vista exterior</figcaption></figure>
+              <figure class="slide"><img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1200&q=80" alt="Paisaje de playa cercano" loading="lazy"><figcaption>Paisajes cercanos</figcaption></figure>
+              <figure class="slide"><img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?auto=format&fit=crop&w=1200&q=80" alt="Resort con piscina" loading="lazy"><figcaption>Jardín y piscina</figcaption></figure>
+            </div>
+          </div>
+          <button class="carousel-btn prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="carousel-btn next" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="carousel-dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= NOSOTROS ================= -->
+    <section class="section" id="nosotros">
+      <div class="container about-grid">
+        <div class="about-images reveal">
+          <img class="about-img-1" src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=900&q=80" alt="Interior del hotel" loading="lazy">
+          <img class="about-img-2" src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=700&q=80" alt="Habitación acogedora" loading="lazy">
+          <div class="about-badge"><strong>+10</strong><span>años (dato ilustrativo)</span></div>
+        </div>
+
+        <div class="about-text reveal">
+          <span class="eyebrow">Sobre nosotros</span>
+          <h2>Hospitalidad que se siente en casa</h2>
+          <p>En Hotel SAS creemos que un buen viaje empieza con un buen descanso. Por eso combinamos ambientes serenos, colores suaves y un equipo atento a cada detalle, para que llegues, respires y te sientas bienvenido.</p>
+          <ul class="check-list">
+            <li><i class="fa-solid fa-circle-check"></i> Habitaciones amplias, silenciosas y bien iluminadas</li>
+            <li><i class="fa-solid fa-circle-check"></i> Cocina local con ingredientes frescos</li>
+            <li><i class="fa-solid fa-circle-check"></i> Atención personalizada las 24 horas</li>
+          </ul>
+          <div class="stats">
+            <div><strong data-count="48">0</strong><span>Habitaciones (ejemplo)</span></div>
+            <div><strong data-count="12000">0</strong><span>Huéspedes (ejemplo)</span></div>
+            <div><strong data-count="49" data-decimal="1">0</strong><span>Valoración (ejemplo)</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SERVICIOS ================= -->
+    <section class="section section-sage" id="servicios">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Servicios destacados</span>
+          <h2>Todo lo que necesitas para sentirte cómodo</h2>
+          <p>Pensamos en los detalles para que tú solo te preocupes por disfrutar.</p>
+        </div>
+
+        <div class="services-grid">
+          <article class="service-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-wifi"></i></div>
+            <h3>WiFi gratuito</h3>
+            <p>Conexión rápida y estable en todas las habitaciones y zonas comunes.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-utensils"></i></div>
+            <h3>Restaurante</h3>
+            <p>Desayuno buffet y carta con platos locales e internacionales.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-bell-concierge"></i></div>
+            <h3>Recepción 24 horas</h3>
+            <p>Check-in flexible, recomendaciones y ayuda en cualquier momento.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-broom"></i></div>
+            <h3>Limpieza diaria</h3>
+            <p>Habitaciones impecables con ropa de cama fresca y amenities.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-bed"></i></div>
+            <h3>Habitaciones cómodas</h3>
+            <p>Colchones de alta calidad, aire acondicionado y TV de pantalla plana.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-square-parking"></i></div>
+            <h3>Parqueadero</h3>
+            <p>Estacionamiento cubierto y vigilado para huéspedes.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-headset"></i></div>
+            <h3>Atención al cliente</h3>
+            <p>Un equipo cercano para resolver dudas antes, durante y después.</p>
+          </article>
+          <article class="service-card reveal">
+            <div class="service-icon"><i class="fa-solid fa-person-swimming"></i></div>
+            <h3>Piscina y spa</h3>
+            <p>Espacios de relajación para cerrar el día con calma.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= HABITACIONES ================= -->
+    <section class="section" id="habitaciones">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Habitaciones</span>
+          <h2>Elige el espacio ideal para tu estadía</h2>
+          <p>Desde una escapada individual hasta una suite para compartir en familia.</p>
+        </div>
+
+        <div class="rooms-grid">
+          <!-- Individual -->
+          <article class="room-card reveal">
+            <div class="room-img">
+              <img src="https://images.unsplash.com/photo-1631049307264-da0ec9d70304?auto=format&fit=crop&w=900&q=80" alt="Habitación individual" loading="lazy">
+              <span class="room-tag">Ideal para viajar solo</span>
+            </div>
+            <div class="room-body">
+              <h3>Habitación Individual</h3>
+              <p>Un espacio sereno y funcional con escritorio, cama sencilla premium y luz natural.</p>
+              <ul class="room-meta">
+                <li><i class="fa-solid fa-user"></i> 1 huésped</li>
+                <li><i class="fa-solid fa-wifi"></i> WiFi</li>
+                <li><i class="fa-solid fa-mug-hot"></i> Desayuno</li>
+                <li><i class="fa-solid fa-snowflake"></i> A/C</li>
+              </ul>
+              <div class="room-footer">
+                <div class="price"><strong>$120.000</strong> <small>COP / noche</small></div>
+                <button class="btn btn-primary btn-sm" data-reserve="individual">Cotizar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Doble -->
+          <article class="room-card reveal">
+            <div class="room-img">
+              <img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=900&q=80" alt="Habitación doble" loading="lazy">
+              <span class="room-tag">Más elegida</span>
+            </div>
+            <div class="room-body">
+              <h3>Habitación Doble</h3>
+              <p>Cama king o dos camas, zona de estar y ambientes en tonos salvia para descansar profundo.</p>
+              <ul class="room-meta">
+                <li><i class="fa-solid fa-user-group"></i> 2 huéspedes</li>
+                <li><i class="fa-solid fa-wifi"></i> WiFi</li>
+                <li><i class="fa-solid fa-mug-hot"></i> Desayuno</li>
+                <li><i class="fa-solid fa-tv"></i> Smart TV</li>
+              </ul>
+              <div class="room-footer">
+                <div class="price"><strong>$190.000</strong> <small>COP / noche</small></div>
+                <button class="btn btn-primary btn-sm" data-reserve="doble">Cotizar</button>
+              </div>
+            </div>
+          </article>
+
+          <!-- Suite -->
+          <article class="room-card reveal">
+            <div class="room-img">
+              <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=900&q=80" alt="Suite del hotel" loading="lazy">
+              <span class="room-tag">Experiencia premium</span>
+            </div>
+            <div class="room-body">
+              <h3>Suite Sas</h3>
+              <p>Sala independiente, baño con tina, balcón y detalles de bienvenida para una estadía especial.</p>
+              <ul class="room-meta">
+                <li><i class="fa-solid fa-users"></i> 4 huéspedes</li>
+                <li><i class="fa-solid fa-bath"></i> Tina</li>
+                <li><i class="fa-solid fa-mug-hot"></i> Desayuno</li>
+                <li><i class="fa-solid fa-martini-glass"></i> Minibar</li>
+              </ul>
+              <div class="room-footer">
+                <div class="price"><strong>$340.000</strong> <small>COP / noche</small></div>
+                <button class="btn btn-primary btn-sm" data-reserve="suite">Cotizar</button>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <!-- Carrusel de habitaciones -->
+        <div class="sub-head reveal">
+          <h3>Un vistazo por dentro</h3>
+          <p>Ambientes pensados para que te sientas en calma desde que entras.</p>
+        </div>
+
+        <div class="carousel carousel-rooms" id="carouselRooms" data-per-view="3" data-autoplay="6000">
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <figure class="slide"><img src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=800&q=80" alt="Habitación con cama king" loading="lazy"><figcaption>Cama king premium</figcaption></figure>
+              <figure class="slide"><img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?auto=format&fit=crop&w=800&q=80" alt="Baño de la suite" loading="lazy"><figcaption>Baño de la suite</figcaption></figure>
+              <figure class="slide"><img src="https://images.unsplash.com/photo-1542314831-068cd1dbfd33?auto=format&fit=crop&w=800&q=80" alt="Habitación luminosa" loading="lazy"><figcaption>Luz natural</figcaption></figure>
+              <figure class="slide"><img src="https://images.unsplash.com/photo-1590490360182-c33d57733427?auto=format&fit=crop&w=800&q=80" alt="Habitación doble" loading="lazy"><figcaption>Habitación doble</figcaption></figure>
+              <figure class="slide"><img src="https://images.unsplash.com/photo-1618773928121-c32242e63f39?auto=format&fit=crop&w=800&q=80" alt="Dormitorio sereno" loading="lazy"><figcaption>Tonos salvia</figcaption></figure>
+            </div>
+          </div>
+          <button class="carousel-btn prev" aria-label="Anterior"><i class="fa-solid fa-chevron-left"></i></button>
+          <button class="carousel-btn next" aria-label="Siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+          <div class="carousel-dots"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RESERVAS ================= -->
+    <section class="section booking" id="reservas">
+      <div class="container booking-grid">
+        <div class="booking-info reveal">
+          <span class="eyebrow eyebrow-light">Reservas</span>
+          <h2>Planea tu próxima estadía</h2>
+          <p>Calcula un valor orientativo de tu estancia. Las reservas se gestionan exclusivamente en recepción.</p>
+          <ul class="booking-perks">
+            <li><i class="fa-solid fa-shield-heart"></i> Cancelación flexible hasta 48 h antes</li>
+            <li><i class="fa-solid fa-mug-hot"></i> Desayuno incluido en todas las tarifas</li>
+            <li><i class="fa-solid fa-clock"></i> Check-in 3:00 p. m. · Check-out 12:00 m.</li>
+          </ul>
+        </div>
+
+        <form class="booking-form reveal" id="bookingForm" novalidate>
+          <h3>Cotiza tu estadía</h3>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="checkin"><i class="fa-regular fa-calendar-check"></i> Fecha de llegada</label>
+              <input type="date" id="checkin" name="checkin" required>
+              <small class="error" id="err-checkin"></small>
+            </div>
+            <div class="field">
+              <label for="checkout"><i class="fa-regular fa-calendar-xmark"></i> Fecha de salida</label>
+              <input type="date" id="checkout" name="checkout" required>
+              <small class="error" id="err-checkout"></small>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="field">
+              <label for="guests"><i class="fa-solid fa-user-group"></i> Huéspedes</label>
+              <input type="number" id="guests" name="guests" min="1" max="4" value="2" required>
+              <small class="error" id="err-guests"></small>
+            </div>
+            <div class="field">
+              <label for="roomType"><i class="fa-solid fa-bed"></i> Tipo de habitación</label>
+              <select id="roomType" name="roomType" required>
+                <option value="">Selecciona...</option>
+                <option value="individual">Individual · $120.000</option>
+                <option value="doble">Doble · $190.000</option>
+                <option value="suite">Suite Sas · $340.000</option>
+              </select>
+              <small class="error" id="err-roomType"></small>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-lg">Calcular precio estimado</button>
+          <p class="form-note">Tarifas ilustrativas. No verifica disponibilidad ni crea una reserva.</p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ================= TESTIMONIOS ================= -->
+    <section class="section section-light" id="testimonios">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Testimonios ilustrativos</span>
+          <h2>Ejemplos de experiencias de huéspedes</h2>
+        </div>
+
+        <div class="testimonials-grid">
+          <article class="testimonial reveal">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>“Llegamos cansados y nos recibieron con una sonrisa. La habitación era silenciosa y preciosa. Volveremos pronto.”</p>
+            <div class="person">
+              <span class="avatar">MC</span>
+              <div><strong>María Camila R.</strong><small>Viaje en pareja</small></div>
+            </div>
+          </article>
+          <article class="testimonial reveal">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p>“El desayuno es excelente y el personal está pendiente de todo. Ideal para viajes de trabajo: WiFi rápido y cama cómoda.”</p>
+            <div class="person">
+              <span class="avatar">JP</span>
+              <div><strong>Julián Pérez</strong><small>Viaje de negocios</small></div>
+            </div>
+          </article>
+          <article class="testimonial reveal">
+            <div class="stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star-half-stroke"></i></div>
+            <p>“La suite fue perfecta para celebrar en familia. Los niños amaron la piscina y nosotros la tranquilidad.”</p>
+            <div class="person">
+              <span class="avatar">LG</span>
+              <div><strong>Laura Gómez</strong><small>Viaje en familia</small></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACTO ================= -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">Contacto y ubicación</span>
+          <h2>Estamos para ayudarte</h2>
+          <p>Información de contacto ilustrativa del prototipo.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <div class="info-item"><i class="fa-solid fa-location-dot"></i><div><strong>Dirección</strong><span>Calle 00 # 00-00, Colombia</span></div></div>
+            <div class="info-item"><i class="fa-solid fa-phone"></i><div><strong>Teléfono</strong><span>+57 300 000 0000</span></div></div>
+            <div class="info-item"><i class="fa-solid fa-envelope"></i><div><strong>Correo</strong><span>reservas@hotelsas.com</span></div></div>
+            <div class="info-item"><i class="fa-solid fa-clock"></i><div><strong>Recepción</strong><span>Abierta las 24 horas</span></div></div>
+
+            <div class="map-box">
+              <iframe title="Ubicación del hotel" loading="lazy"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=-74.12%2C4.58%2C-74.04%2C4.66&layer=mapnik"></iframe>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <h3>Formulario de demostración</h3>
+            <div class="field">
+              <label for="cName">Nombre</label>
+              <input type="text" id="cName" placeholder="Tu nombre" required>
+              <small class="error" id="err-cName"></small>
+            </div>
+            <div class="field">
+              <label for="cEmail">Correo electrónico</label>
+              <input type="email" id="cEmail" placeholder="tucorreo@ejemplo.com" required>
+              <small class="error" id="err-cEmail"></small>
+            </div>
+            <div class="field">
+              <label for="cMsg">Mensaje</label>
+              <textarea id="cMsg" rows="4" placeholder="¿En qué podemos ayudarte?" required></textarea>
+              <small class="error" id="err-cMsg"></small>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Validar mensaje</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#inicio" class="logo logo-light"><i class="fa-solid fa-leaf"></i><span>Hotel <strong>SAS</strong></span></a>
+        <p>Un lugar para descansar, desconectar y volver a casa con buenos recuerdos.</p>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+        </div>
+      </div>
+      <div>
+        <h4>Enlaces</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#habitaciones">Habitaciones</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#reservas">Cotización</a></li>
+          <li><a href="login_cliente.php">Acceso clientes</a></li>
+          <li><a href="login_personal.php">Acceso personal</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><i class="fa-solid fa-location-dot"></i> Calle 00 # 00-00</li>
+          <li><i class="fa-solid fa-phone"></i> +57 300 000 0000</li>
+          <li><i class="fa-solid fa-envelope"></i> reservas@hotelsas.com</li>
+        </ul>
+      </div>
+      <div>
+        <h4>Boletín</h4>
+        <p>Boletín de demostración; no envía correos.</p>
+        <form class="newsletter" id="newsletterForm" novalidate>
+          <input type="email" id="nEmail" placeholder="Tu correo" aria-label="Correo para boletín">
+          <button type="submit" aria-label="Validar correo"><i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+      </div>
+    </div>
+    <div class="footer-bottom"><p>Prototipo académico · imágenes, tarifas y datos comerciales ilustrativos.</p>
+      <div class="container">© <span id="year"></span> Hotel SAS. Todos los derechos reservados.</div>
+    </div>
+  </footer>
+
+  <!-- Botón volver arriba -->
+  <button class="to-top" id="toTop" aria-label="Volver arriba"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <!-- ================= MODAL / TOAST ================= -->
+  <div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+    <div class="modal-box">
+      <button class="modal-close" id="modalClose" aria-label="Cerrar"><i class="fa-solid fa-xmark"></i></button>
+      <div class="modal-icon" id="modalIcon"></div>
+      <h3 id="modalTitle"></h3>
+      <div id="modalBody"></div>
+      <button class="btn btn-primary" id="modalOk">Entendido</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
